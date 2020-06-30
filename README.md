@@ -5,10 +5,10 @@ Explanation of the current state of the repository:
 1. Our dataset is based on 4 types of objects; documents, organisations, funders and people. In the data folder, one can find :
 - the pdf of all AI ethical guidelines documents retrieved 
 - the excel files corresponding to the different data tables that have been encoded for these documents. 
-    a. Documents with columns ['File name (Rx)', 'Original Title','Organization', 'Year', 'Authors','Document funding sources', 'URL','Citation']
-    b. Organisations : ['name', 'category','country','funder','founder']
-    c. Funders: ['name','category']
-    d. People with columns : ['name', 'author_bool', 'founder_bool', 'current_affiliation', 'past_affiliation']
+    - Documents with columns ['File name (Rx)', 'Original Title','Organization', 'Year', 'Authors','Document funding sources', 'URL','Citation']
+    - Organisations : ['name', 'category','country','funder','founder']
+    - Funders: ['name','category']
+    - People with columns : ['name', 'author_bool', 'founder_bool', 'current_affiliation', 'past_affiliation']
     
  2. The create_dataset.py script was used to create a dataset of the texts from reading the set of pdfs. It creates both a 'raw text' dataset, as well as a lemmatized version of the same documents. 
  
